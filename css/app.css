@@ -1,0 +1,136 @@
+ 
+/********************************************/
+/* Hey there. This stylesheet is broken up 
+into the following sections.
+
+SECTION 1: GENERAL STYLES
+SECTION 2: CUSTOM CLASSES & IDS
+SECTION 3: BUTTONS
+SECTION 4: MENU AND NAV
+SECTION 5: OFF CANVAS NAV
+SECTION 6: MAIN DIVS AS THEY APPEAR IN THE HTML
+SECTION 7: FOOTER
+SECTION 8: MEDIA QUERIES - THIS SITE WAS BUILT 
+MOBILE FIRST. SO THE MEDIA QUERIES PERTAIN TO 
+MEDIUM AND LARGE SCREENS. */
+/********************************************/
+
+/********************************************/
+/* GENERAL STYLES */
+/********************************************/
+ * {
+ 	box-sizing: border-box;
+ }
+
+ a {
+ 	color: #f26522;
+ }
+
+ a:hover, a:focus {
+ 	color: #87cb63;
+ }
+
+ header {
+ 	height: 7rem;
+ 	background-color: #f26522;
+ }
+
+ header h1 {
+ 	text-align: center;
+ 	color: #fff;
+ 	margin-top: 2rem;
+ 	font-weight: 100;
+ 	font-size: 2rem;
+ }
+
+
+ .hero {
+ 	height: 30rem;
+ 	background-image: url(../img/hero.jpg);
+ 	background-size: cover;
+ 	background-position: center;
+ 	margin-bottom: 1rem;
+ }
+
+ .hero blockquote {
+ 	margin-top: 13rem;
+ 	color: #fff;
+ 	font-weight: 300;
+ }
+
+  .hero cite {
+ 	color: #fff;
+ 	font-weight: 300;
+ }
+
+ .maincontent .button {
+ 	background-color: #fff;
+ 	border-color: #d8d8d8;
+ 	border-width: 1px;
+ 	position: absolute;
+ 	bottom: .5rem;
+ }
+
+  .maincontent .button:hover {
+ 	background-color: #d8d8d8;
+ 	border-color: #d8d8d8;
+ 	border-width: 1px;
+ 	color: #212121;
+ }
+
+ .maincontent .panel a {
+ 	color: #212121;
+ 	text-transform: uppercase;
+ }
+
+ .panel {
+ 	background-color: #fff;
+ }
+
+ .w-img-container img {
+ 	width: 100%;
+ }
+
+
+ footer {
+ 	height: 4rem;
+ 	background-color: #f26522;
+ }
+
+ footer p {
+ 	text-align: center;
+ 	margin: .8rem 0 0 0;
+ 	color: #fff;
+ 	font-size: 1.5rem;
+ 	font-weight: 300;
+ }
+
+
+/********************************************/
+/* MEDIA QUERIES */
+/********************************************/
+/* Medium screens */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { 
+
+header h1 {
+	margin-top: 1.65rem;
+	font-size: 3rem;
+}
+
+ .w-img-container {
+ 	width: 80%;
+ 	margin: 0 auto;
+ }
+
+} 
+
+/* min-width 1025px, large screens */
+/* Large screens */
+@media only screen and (min-width: 64.063em) { 
+ .w-img-container {
+ 	width: 60%;
+ 	margin: 0 auto;
+ }
+} 
+
