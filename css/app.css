@@ -15,6 +15,25 @@ MOBILE FIRST. SO THE MEDIA QUERIES PERTAIN TO
 MEDIUM AND LARGE SCREENS. */
 /********************************************/
 
+
+/********************************************/
+/* COLOR PALETTE */
+/********************************************/
+
+.primary-color 	{
+	color: #7e8b2b;
+}
+.dark-primary	{
+	color: #2a2f0e;
+}
+.accent-color	{
+	color: #ede9af;
+}
+.off-white		{
+	color: #eef1d8;
+}
+
+
 /********************************************/
 /* GENERAL STYLES */
 /********************************************/
@@ -22,17 +41,21 @@ MEDIUM AND LARGE SCREENS. */
  	box-sizing: border-box;
  }
 
+ html, body {
+ 	background-color: #ede9af;
+ }
+
  a {
- 	color: #f26522;
+ 	color: #7e8b2b;
  }
 
  a:hover, a:focus {
- 	color: #87cb63;
+ 	color: #FF5252;
  }
 
  header {
  	height: 7rem;
- 	background-color: #f26522;
+ 	background-color: #7e8b2b;
  }
 
  header h1 {
@@ -63,44 +86,56 @@ MEDIUM AND LARGE SCREENS. */
  	font-weight: 300;
  }
 
+ .panel {
+ 	background-color: #eef1d8;
+ 	border-color: #eef1d8;
+ }
+
+ .panel h2 {
+ 	color: #7e8b2b;
+ 	font-weight: 700;
+ }
+
+ .maincontent h1 {
+ 	color: #2a2f0e;
+ 	font-weight: 700;
+ }
+
  .maincontent .button {
- 	background-color: #fff;
- 	border-color: #d8d8d8;
+ 	background-color: #7e8b2b;
+ 	border-color: #7e8b2b;
  	border-width: 1px;
  	position: absolute;
  	bottom: .5rem;
+ 	color: #eef1d8;
  }
 
   .maincontent .button:hover {
- 	background-color: #d8d8d8;
- 	border-color: #d8d8d8;
+ 	background-color: #eef1d8;
  	border-width: 1px;
- 	color: #212121;
+ 	color: #7e8b2b;
  }
 
- .maincontent .panel a {
- 	color: #212121;
- 	text-transform: uppercase;
+ .wireframing img {
+ 	width: 80%;
+ 	margin: 0 10%;
+ 	box-shadow: 2px 2px 4px rgba(0, 0, 0, .35)
  }
 
- .panel {
- 	background-color: #fff;
- }
 
- .w-img-container img {
- 	width: 100%;
- }
+
+
 
 
  footer {
  	height: 4rem;
- 	background-color: #f26522;
+ 	background-color: #2a2f0e;
  }
 
  footer p {
  	text-align: center;
  	margin: .8rem 0 0 0;
- 	color: #fff;
+ 	color: #eef1d8;
  	font-size: 1.5rem;
  	font-weight: 300;
  }
@@ -118,19 +153,20 @@ header h1 {
 	font-size: 3rem;
 }
 
- .w-img-container {
- 	width: 80%;
- 	margin: 0 auto;
- }
 
 } 
 
 /* min-width 1025px, large screens */
 /* Large screens */
 @media only screen and (min-width: 64.063em) { 
- .w-img-container {
- 	width: 60%;
- 	margin: 0 auto;
+ .wireframing img {
+ 	width: 30%;
+ 	margin: 0 1%;
+ 	float: left;
+
+ }
+
+
  }
 } 
 
